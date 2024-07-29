@@ -258,6 +258,3 @@ git diff HEAD~1 HEAD  # Affiche les différences entre le dernier commit et celu
 ---
 
 Ce guide vous fournit les bases pour commencer à utiliser Git. Pour approfondir vos connaissances, consultez la documentation officielle de Git ou des tutoriels en ligne.
-
-
-Jean Narivelo
