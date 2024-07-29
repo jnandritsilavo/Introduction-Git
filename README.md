@@ -258,11 +258,6 @@ git diff HEAD~1 HEAD  # Affiche les différences entre le dernier commit et celu
 ---
 
 Ce guide vous fournit les bases pour commencer à utiliser Git. Pour approfondir vos connaissances, consultez la documentation officielle de Git ou des tutoriels en ligne.
-"""
 
-# Saving the content to README.md
-file_path = "/mnt/data/README.md"
-with open(file_path, "w") as file:
-    file.write(readme_content)
 
-file_path
+Jean Narivelo
