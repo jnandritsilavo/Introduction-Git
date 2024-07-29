@@ -25,17 +25,17 @@ Ce guide vous présente les commandes de base de Git, un système de gestion de 
 
 Cette commande initialise un nouveau dépôt Git dans le répertoire courant.
 
-\`\`\`bash
+```bash
 git init
-\`\`\`
+```
 
 ### Exemple
 
-\`\`\`bash
+```bash
 mkdir mon-projet
 cd mon-projet
 git init
-\`\`\`
+```
 
 ## Clonage d'un Dépôt
 
@@ -43,15 +43,15 @@ git init
 
 Clone un dépôt existant à partir de l'URL fournie.
 
-\`\`\`bash
+```bash
 git clone https://github.com/utilisateur/mon-projet.git
-\`\`\`
+```
 
 ### Exemple
 
-\`\`\`bash
+```bash
 git clone https://github.com/octocat/Hello-World.git
-\`\`\`
+```
 
 ## Suivi des Modifications
 
@@ -59,29 +59,29 @@ git clone https://github.com/octocat/Hello-World.git
 
 Affiche l'état des fichiers dans le répertoire de travail et l'index.
 
-\`\`\`bash
+```bash
 git status
-\`\`\`
+```
 
 ### Exemple
 
-\`\`\`bash
+```bash
 git status
-\`\`\`
+```
 
 ### `git add <fichier>`
 
 Ajoute des modifications dans l'index.
 
-\`\`\`bash
+```bash
 git add fichier.txt
-\`\`\`
+```
 
 ### Exemple
 
-\`\`\`bash
+```bash
 git add .   # Ajoute tous les fichiers modifiés
-\`\`\`
+```
 
 ## Enregistrement des Modifications
 
@@ -89,15 +89,15 @@ git add .   # Ajoute tous les fichiers modifiés
 
 Enregistre les modifications ajoutées dans l'index avec un message de commit.
 
-\`\`\`bash
+```bash
 git commit -m "Ajout du fichier de configuration"
-\`\`\`
+```
 
 ### Exemple
 
-\`\`\`bash
+```bash
 git commit -m "Initial commit"
-\`\`\`
+```
 
 ## Envoi des Modifications
 
@@ -105,15 +105,15 @@ git commit -m "Initial commit"
 
 Envoie les commits locaux vers le dépôt distant.
 
-\`\`\`bash
+```bash
 git push origin main
-\`\`\`
+```
 
 ### Exemple
 
-\`\`\`bash
+```bash
 git push origin main
-\`\`\`
+```
 
 ## Récupération des Modifications
 
@@ -121,15 +121,15 @@ git push origin main
 
 Récupère les modifications du dépôt distant et fusionne les dans la branche courante.
 
-\`\`\`bash
+```bash
 git pull origin main
-\`\`\`
+```
 
 ### Exemple
 
-\`\`\`bash
+```bash
 git pull origin main
-\`\`\`
+```
 
 ## Branches
 
@@ -137,29 +137,29 @@ git pull origin main
 
 Affiche la liste des branches locales.
 
-\`\`\`bash
+```bash
 git branch
-\`\`\`
+```
 
 ### Exemple
 
-\`\`\`bash
+```bash
 git branch -a  # Affiche aussi les branches distantes
-\`\`\`
+```
 
 ### `git checkout <branche>`
 
 Change de branche.
 
-\`\`\`bash
+```bash
 git checkout develop
-\`\`\`
+```
 
 ### Exemple
 
-\`\`\`bash
+```bash
 git checkout -b nouvelle-branche  # Crée et bascule sur une nouvelle branche
-\`\`\`
+```
 
 ## Fusion de Branches
 
@@ -167,15 +167,15 @@ git checkout -b nouvelle-branche  # Crée et bascule sur une nouvelle branche
 
 Fusionne la branche spécifiée dans la branche courante.
 
-\`\`\`bash
+```bash
 git merge feature-branch
-\`\`\`
+```
 
 ### Exemple
 
-\`\`\`bash
+```bash
 git merge develop
-\`\`\`
+```
 
 ## Historique des Commits
 
@@ -183,15 +183,15 @@ git merge develop
 
 Affiche l'historique des commits.
 
-\`\`\`bash
+```bash
 git log
-\`\`\`
+```
 
 ### Exemple
 
-\`\`\`bash
+```bash
 git log --oneline  # Affiche un historique compact
-\`\`\`
+```
 
 ## Dépôts Distants
 
@@ -199,29 +199,29 @@ git log --oneline  # Affiche un historique compact
 
 Affiche les dépôts distants configurés.
 
-\`\`\`bash
+```bash
 git remote
-\`\`\`
+```
 
 ### Exemple
 
-\`\`\`bash
+```bash
 git remote -v  # Affiche les URL associées
-\`\`\`
+```
 
 ### `git fetch <remote>`
 
 Télécharge les objets et les références du dépôt distant sans fusionner les changements.
 
-\`\`\`bash
+```bash
 git fetch origin
-\`\`\`
+```
 
 ### Exemple
 
-\`\`\`bash
+```bash
 git fetch origin
-\`\`\`
+```
 
 ## Rébase
 
@@ -229,15 +229,15 @@ git fetch origin
 
 Rebase la branche courante sur la branche spécifiée.
 
-\`\`\`bash
+```bash
 git rebase main
-\`\`\`
+```
 
 ### Exemple
 
-\`\`\`bash
+```bash
 git rebase develop
-\`\`\`
+```
 
 ## Différences
 
@@ -245,15 +245,15 @@ git rebase develop
 
 Affiche les différences entre les fichiers suivis et leur version dans l'index ou entre deux commits.
 
-\`\`\`bash
+```bash
 git diff
-\`\`\`
+```
 
 ### Exemple
 
-\`\`\`bash
+```bash
 git diff HEAD~1 HEAD  # Affiche les différences entre le dernier commit et celui d'avant
-\`\`\`
+```
 
 ---
 
